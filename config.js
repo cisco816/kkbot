@@ -49,7 +49,7 @@ module.exports = {
   MENTION: process.env.MENTION || '',
   SS_TOKEN: process.env.SS_TOKEN || '',
   MAX_UPLOAD: process.env.MAX_UPLOAD || 230,
-  REJECT_CALL: toBool(process.env.REJECT_CALL),
+  REJECT_CALL: toBool(process.env.REJECT_CALL) ||'true',
   VPS: toBool(process.env.VPS),
   AUTO_STATUS_VIEW: (process.env.AUTO_STATUS_VIEW || 'false').trim(),
   SEND_READ: toBool(process.env.SEND_READ),
